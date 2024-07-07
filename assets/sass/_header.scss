@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    width: 1200px;
+    margin: 39px 120px 52px 120px;
+    justify-content: space-between;
+
+}
+.header__logo {
+}
+.header__menu {
+    text-decoration: none;
+}
+.header__menu-element {
+    @include font_header;
+    text-decoration: none;
+    padding-left: 77px;
+}
+.header__menu-element_bold {
+    padding-left: 90px;
+    font-family: Josefin_Sans_Bold;
+}
+.header__btn-element {
+    @include btn;
+    width: 135px;
+    height: 43px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-left: 44px;
+  
+    
+}

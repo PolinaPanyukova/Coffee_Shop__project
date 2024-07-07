@@ -1,0 +1,12 @@
+@mixin btn {
+    background: #2D635E;
+    text-align: center;
+    color: #FFFFFF;
+}
+@mixin font_header {
+    font-family: Josefin_Sans;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+
+}
