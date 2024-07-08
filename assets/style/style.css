@@ -518,6 +518,7 @@ template {
     width: 162px;
     height: 34px;
     left: 56px;
+    top: 50px;
   }
   .hamburger-menu__btn {
     display: flex;
@@ -553,15 +554,16 @@ template {
     text-align: center;
     top: 0;
     left: -100%;
-    width: 300px;
+    width: 375px;
     height: 100%;
     margin: 0;
-    padding: 50px 0;
     list-style: none;
-    background-color: #ECEFF1;
+    background-color: #ffffff;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   }
   .header__menu-element {
+    position: relative;
+    top: 70px;
     display: block;
     padding: 12px 24px;
     color: #333;
