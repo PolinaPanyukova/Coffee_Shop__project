@@ -1,5 +1,9 @@
-.header {
-    width: 1200px;
+* {
+    outline: 1px solid red;
+  }
+  
+  .header {
+    max-width: 1200px;
     margin: 39px 120px 52px 120px;
 }
 .hamburger-menu {
@@ -39,16 +43,13 @@
 
     .header {
     display: flex;
-    width: 1200px;
     margin: 0; 
     justify-content: flex-start;
     }
  
 
 //  бургер
-.hamburger-menu {
-    display: flex;
-}
+
 #menu__toggle {
     display: none;
     opacity: 0;
@@ -67,6 +68,11 @@
     top: 0;
     transform: rotate(90deg);
   }
+
+  #menu__toggle:checked ~ .hamburger-menu__btn {
+    // display: none;
+  }
+
   #menu__toggle:checked ~ .header__menu {
     visibility: visible;
     left: 0;
