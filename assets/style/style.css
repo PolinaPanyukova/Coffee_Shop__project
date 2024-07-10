@@ -15,7 +15,6 @@
   font-family: "Josefin_Sans_Bold";
 }
 * {
-  outline: 1px solid red;
   box-sizing: border-box;
 }
 
@@ -422,10 +421,6 @@ template {
   display: none;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .header {
   max-width: 1200px;
   margin: 39px 120px 52px 120px;
@@ -577,14 +572,18 @@ template {
 .content-first {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 1000px;
+  max-width: 1200px;
   justify-content: center;
   align-items: center;
   justify-items: center;
-  margin: 0 0 0 120px;
+}
+
+.content-first__left {
+  max-width: 600px;
 }
 
 .content-first__right {
+  max-width: 600px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -634,6 +633,14 @@ template {
   font-size: 28px;
   font-weight: 400;
   line-height: 53.1px;
+  text-align: left;
+}
+
+.content-first__title {
+  font-family: Josefin_Sans;
+  font-size: 63px;
+  font-weight: 700;
+  line-height: 63px;
   text-align: left;
 }
 
