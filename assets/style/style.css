@@ -832,6 +832,10 @@ template {
   letter-spacing: 0.001em;
 }
 
+.footer__element__img {
+  display: none;
+}
+
 @media (max-width: 375px) {
   .footer {
     margin-left: 18px;
