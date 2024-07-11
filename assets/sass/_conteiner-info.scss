@@ -79,3 +79,17 @@ text-align: left;
     max-width: 28px;
     max-height: 109px;
 }
+@media (max-width: 375px) {
+.conteiner-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+
+}
+.conteiner-info__photo-right__line , .conteiner-info__photo-left__line {
+    display: none;
+}
+.conteiner-info .carousel__btn-element {
+    display: none;
+}
+}

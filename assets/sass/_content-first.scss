@@ -82,7 +82,13 @@ text-align: left;
         flex-direction: column;
     }
 .content-first__left {
+    display: flex;
     max-width: 375px;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel__btn-element  {
+    max-width: 200px;
 }
 
 .content-first__main-paragraph{

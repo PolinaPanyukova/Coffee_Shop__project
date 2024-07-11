@@ -99,7 +99,7 @@
     margin-left: 18px;
     width: 27px;
     height: 21px;
-    z-index: 1;
+    z-index: 6;
   }
 
   .hamburger-menu__btn > span,
@@ -133,6 +133,7 @@
     list-style: none;
     background-color: #ffffff;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    z-index: 5;
   }
   
   .header__menu-element{

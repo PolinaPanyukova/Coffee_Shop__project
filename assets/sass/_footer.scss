@@ -60,23 +60,15 @@ margin-left: 120px;
     letter-spacing: 0.001em;
 
 }
-.footer__element__img {
-   display: none;
-}
 
 @media (max-width: 375px) {
     .footer {
         margin-left: 18px;
     }
-    .footer__paragraph {
+    .footer__paragraph , .footer__element-left__contacts,.footer__element-center ,.footer__element__img  {
         display: none;
     }
-    .footer__element-left__contacts {
-        display: none;
-    }
-    .footer__element-center {
-        display: none;
-    }
+  
     .footer__element {
         text-align: center;
     }
