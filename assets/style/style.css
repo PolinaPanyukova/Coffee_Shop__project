@@ -644,4 +644,80 @@ template {
   text-align: left;
 }
 
+.conteiner-info {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 139px 103px;
+  margin-top: 194px;
+  margin-left: 120px;
+}
+
+.conteiner-info__img-left {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  position: relative;
+}
+
+.conteiner-info__photo-left__cup {
+  max-width: 364px;
+  top: 77px;
+  left: 28px;
+  position: absolute;
+  z-index: 2;
+}
+
+.conteiner-info__photo-left__line {
+  top: -25px;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.conteiner-info__about-us-top {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.conteiner-info__title {
+  font-family: Josefin_Sans;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: left;
+}
+
+.conteiner-info__about-us-bottom {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.conteiner-info__about-us-bottom__paragraph, .conteiner-info__about-us-top__paragraph {
+  font-family: AlegreyaSans;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.001em;
+  text-align: left;
+}
+
+.conteiner-info__img-right {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  position: relative;
+}
+
+.conteiner-info__photo-right__cup {
+  top: -25px;
+  left: 72px;
+  position: absolute;
+  z-index: 2;
+}
+
+.conteiner-info__photo-right__line {
+  position: absolute;
+  z-index: 2;
+}
+
 /*# sourceMappingURL=style.css.map */
