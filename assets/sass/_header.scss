@@ -1,5 +1,7 @@
 
-  
+* {
+  outline: 1px solid red;
+}
   .header {
     max-width: 1200px;
     margin: 39px 120px 52px 120px;
@@ -7,6 +9,7 @@
 .hamburger-menu {
     display: flex;
     justify-content: space-between;
+    
 }
 .header__menu__logo {
     display: none;
@@ -55,8 +58,8 @@
   
   #menu__toggle:checked ~ .hamburger-menu__btn > span {
     transform: rotate(45deg);
-    top: 36px;
-    left: 220px;
+    margin-top: 56px;
+    margin-left: 290px;
   }
   #menu__toggle:checked ~ .hamburger-menu__btn > span::before {
     top: 0;
@@ -67,9 +70,6 @@
     transform: rotate(90deg);
   }
 
-  #menu__toggle:checked ~ .hamburger-menu__btn {
-    // display: none;
-  }
 
   #menu__toggle:checked ~ .header__menu {
     visibility: visible;
@@ -79,8 +79,8 @@
     position: relative;
     width: 160px;
     height: 33px;
-    top: 28px;
-    left: 88px;
+    margin-top: 28px;
+    margin-left: 88px;
   }
   .header__btn-element {
     display: none;
@@ -90,15 +90,15 @@
     position: relative;
     width: 162px;
     height: 34px;
-    left: 56px;
-    top: 50px;
+    margin: 50px 0 91px 106px;
+   
   }
   .hamburger-menu__btn {
     display: flex;
     align-items: center;
     position: fixed;
-    top: 30px;
-    left: 18px;
+    margin-top: 30px;
+    margin-left: 18px;
     width: 27px;
     height: 21px;
     z-index: 1;
@@ -128,26 +128,23 @@
     position: fixed;
     visibility: hidden;
     text-align: center;
-    top: 0;
+    margin-top: 0;
     left: -100%;
     width: 375px;
     height: 100%;
-    margin: 0;
     list-style: none;
     background-color: #ffffff;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
   }
   
   .header__menu-element{
-    position: relative;
-        top: 70px;
     display: block;
-    padding: 12px 24px;
+    padding: 0 0 70px;
     color: #333;
     font-family: Josefin_Sans;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
   }
   .header__menu-element:hover {
     background-color: #CFD8DC;

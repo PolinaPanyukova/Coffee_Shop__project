@@ -421,6 +421,10 @@ template {
   display: none;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 .header {
   max-width: 1200px;
   margin: 39px 120px 52px 120px;
@@ -480,8 +484,8 @@ template {
   }
   #menu__toggle:checked ~ .hamburger-menu__btn > span {
     transform: rotate(45deg);
-    top: 36px;
-    left: 220px;
+    margin-top: 56px;
+    margin-left: 290px;
   }
   #menu__toggle:checked ~ .hamburger-menu__btn > span::before {
     top: 0;
@@ -499,8 +503,8 @@ template {
     position: relative;
     width: 160px;
     height: 33px;
-    top: 28px;
-    left: 88px;
+    margin-top: 28px;
+    margin-left: 88px;
   }
   .header__btn-element {
     display: none;
@@ -510,15 +514,14 @@ template {
     position: relative;
     width: 162px;
     height: 34px;
-    left: 56px;
-    top: 50px;
+    margin: 50px 0 91px 106px;
   }
   .hamburger-menu__btn {
     display: flex;
     align-items: center;
     position: fixed;
-    top: 30px;
-    left: 18px;
+    margin-top: 30px;
+    margin-left: 18px;
     width: 27px;
     height: 21px;
     z-index: 1;
@@ -545,25 +548,22 @@ template {
     position: fixed;
     visibility: hidden;
     text-align: center;
-    top: 0;
+    margin-top: 0;
     left: -100%;
     width: 375px;
     height: 100%;
-    margin: 0;
     list-style: none;
     background-color: #ffffff;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   }
   .header__menu-element {
-    position: relative;
-    top: 70px;
     display: block;
-    padding: 12px 24px;
+    padding: 0 0 70px;
     color: #333;
     font-family: Josefin_Sans;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
   }
   .header__menu-element:hover {
     background-color: #CFD8DC;
@@ -622,10 +622,6 @@ template {
   margin: 30px;
 }
 
-.content-first__right__social__paragraph {
-  transform: rotate(-90deg);
-}
-
 .content-first__main-paragraph {
   width: 414px;
   height: 53px;
@@ -644,6 +640,36 @@ template {
   text-align: left;
 }
 
+.content-first__right__social__img {
+  max-width: 32px;
+}
+
+@media (max-width: 375px) {
+  .content-first {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-first__left {
+    max-width: 375px;
+  }
+  .content-first__main-paragraph {
+    font-family: Cedarville Cursive;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 36.03px;
+    text-align: center;
+  }
+  .content-first__title {
+    font-family: Josefin_Sans;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+  }
+  .content-first__right {
+    display: none;
+  }
+}
 .conteiner-info {
   max-width: 1200px;
   display: grid;
@@ -718,6 +744,11 @@ template {
 .conteiner-info__photo-right__line {
   position: absolute;
   z-index: 2;
+}
+
+.content-first__right__social__img__follow {
+  max-width: 28px;
+  max-height: 109px;
 }
 
 /*# sourceMappingURL=style.css.map */

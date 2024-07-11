@@ -51,9 +51,7 @@
     margin: 30px;
 }
 
-.content-first__right__social__paragraph  {
-    transform: rotate(-90deg);
-}
+
 
 .content-first__main-paragraph {
     width: 414px;
@@ -75,3 +73,38 @@ line-height: 63px;
 text-align: left;
 
 }
+.content-first__right__social__img {
+    max-width: 32px;
+}
+@media (max-width: 375px) {
+    .content-first {
+        display: flex;
+        flex-direction: column;
+    }
+.content-first__left {
+    max-width: 375px;
+}
+
+.content-first__main-paragraph{
+    font-family: Cedarville Cursive;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 36.03px;
+    text-align: center;
+
+}
+.content-first__title{
+    font-family: Josefin_Sans;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+
+}
+
+.content-first__right {
+    display: none;
+}
+
+}
+
