@@ -9,6 +9,9 @@
     justify-content: space-between;
     
 }
+.content-first__right__social__img {
+  display: none;
+}
 .header__menu__logo {
     display: none;
 }
@@ -72,6 +75,9 @@
   #menu__toggle:checked ~ .header__menu {
     visibility: visible;
     left: 0;
+  }
+  .content-first__right__social__img {
+    display: inline-block;
   }
   .header__logo {
     position: relative;
