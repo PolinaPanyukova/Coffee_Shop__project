@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns:repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-	gap:  139px 103px;
+	gap:  139px;
     margin-top: 194px;
     margin-left: 120px;
 }
@@ -62,6 +62,12 @@ text-align: left;
     grid-column: 3 / 4;
     grid-row: 2/ 3;
     position: relative;
+    margin: 30px 0 0 103px;
+}
+.conteiner-info__photo-right__background {
+    width: 410px;
+height: 276px;
+
 }
 
 .conteiner-info__photo-right__cup {
@@ -73,6 +79,11 @@ text-align: left;
 .conteiner-info__photo-right__line {
     position: absolute;
     z-index: 2;
+    margin-top: -25px;
+    margin-left: -25px;
+ 
+
+
 }
 
 .content-first__right__social__img__follow {
@@ -84,6 +95,7 @@ text-align: left;
     display: flex;
     flex-direction: column;
     margin-left: 0;
+    gap: 0;
 
 }
 .conteiner-info__photo-right__line , .conteiner-info__photo-left__line {
@@ -91,5 +103,24 @@ text-align: left;
 }
 .conteiner-info .carousel__btn-element {
     display: none;
+}
+.conteiner-info__img-left {
+    order: 1;
+}
+.conteiner-info__about-us-top {
+    margin-top: 30px;
+    order: 2;
+}
+.conteiner-info__about-us-bottom {
+    margin-top: 30px;
+    order: 4;
+}
+.conteiner-info__img-right {
+    margin-top: 96px;
+    order: 3;
+}
+.conteiner-info__photo-left__cup {
+    left: 0;
+    top: 7px;
 }
 }
