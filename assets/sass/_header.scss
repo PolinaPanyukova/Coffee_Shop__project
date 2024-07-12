@@ -9,7 +9,7 @@
     justify-content: space-between;
     
 }
-.content-first__right__social__img {
+.header__menu__img {
   display: none;
 }
 .header__menu__logo {
@@ -76,8 +76,9 @@
     visibility: visible;
     left: 0;
   }
-  .content-first__right__social__img {
+  .header__menu__img {
     display: inline-block;
+    max-width: 45px;
   }
   .header__logo {
     position: relative;
