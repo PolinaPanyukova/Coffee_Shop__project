@@ -2,6 +2,7 @@
 
 .header {
   @extend %container;
+  margin-top: 50px;
 }
 .hamburger-menu {
     display: flex;
@@ -18,10 +19,17 @@
     text-decoration: none;
 }
 .header__menu-element {
-    @include font_header;
-    text-decoration: none;
-    padding-left: 77px;
+  @include font_header;
+  text-decoration: none;
+  padding-left: 77px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
 }
+.header__menu-element:hover {
+  text-decoration: underline;
+}
+
 .header__menu-element_bold {
     padding-left: 90px;
     font-family: Josefin_Sans_Bold;
@@ -30,24 +38,42 @@
     @include btn;
     width: 135px;
     height: 43px;
+    font-size: 16px;
     font-weight: 700;
+    line-height: 16px;
+    text-align: center;
     border-radius: 5px;
     margin-left: 44px;   
 }
+.header__btn-element:hover {
+  transform: scale(1.1);
+  font-size: 18px;
+}
+
 #menu__toggle, .hamburger-menu__btn {
     display: none;
 }
 
 
 /////////////////////////////////////// media
-@media (max-width: 375px){
+@media (max-width: 875px){
 
     .header {
-    display: flex;
-    margin: 0; 
-    justify-content: flex-start;
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+      padding: 0;
+      
     }
- 
+ .hamburger-menu {
+    position: fixed;
+    z-index: 7;
+    width: 100%;
+    padding: 0 0 20px 0;
+    background-color: white;
+    box-shadow: 0px 19px 53px 3px rgba(34, 60, 80, 0.1);
+
+ }
 
 //  бургер
 
@@ -77,6 +103,7 @@
   }
   .header__menu__img {
     display: inline-block;
+    padding: 65px 0 65px;
     max-width: 45px;
   }
   .header__logo {
@@ -89,6 +116,8 @@
   .header__btn-element {
     display: none;
   }
+
+
   .header__menu__logo {
     display: flex;
     position: relative;
@@ -144,14 +173,22 @@
   
   .header__menu-element{
     display: block;
-    padding: 0 0 70px;
+    padding: 25px 0 25px;
     color: #333;
     font-family: Josefin_Sans;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 36px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
   }
   .header__menu-element:hover {
     background-color: #CFD8DC;
   }
 }   
+@media screen and (max-width: 1200px) {
+  .header__menu-element {
+    padding-left: 27px;
+  }
+  .header__menu-element_bold {
+    padding-left: 30px;
+  }
+}

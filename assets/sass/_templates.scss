@@ -35,7 +35,7 @@ a {
   margin: 0 auto;
   padding: 0 $global-side-padding;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 875px) {
     padding: 0 $global-side-padding-mobile;
   }
 
