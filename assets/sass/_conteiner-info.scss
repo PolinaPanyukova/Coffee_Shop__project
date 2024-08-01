@@ -1,11 +1,10 @@
 .conteiner-info {
-    max-width: 1200px;
+    @extend %container;
     display: grid;
     grid-template-columns:repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	gap:  139px;
     margin-top: 194px;
-    margin-left: 120px;
 }
 .conteiner-info__img-left {
     

@@ -1,8 +1,7 @@
 
 
-  .header {
-    max-width: 1200px;
-    margin: 39px 120px 52px 120px;
+.header {
+  @extend %container;
 }
 .hamburger-menu {
     display: flex;
