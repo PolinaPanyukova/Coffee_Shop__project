@@ -345,7 +345,7 @@ a {
     padding: 0 10px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1255px) {
   .footer__container, .conteiner-info, .content-first, .header {
     max-width: 1140px;
   }
@@ -684,8 +684,8 @@ a {
   z-index: 2;
   max-width: 344px;
   max-height: 373px;
-  top: 140px;
-  left: 197px;
+  margin-top: 140px;
+  margin-left: 197px;
 }
 
 .content-first__right__img__vector {
@@ -693,8 +693,8 @@ a {
   z-index: 2;
   max-width: 25px;
   max-height: 6px;
-  left: 67px;
-  top: 387px;
+  margin-left: 67px;
+  margin-top: 387px;
 }
 
 .content-first__right__social {
@@ -779,7 +779,7 @@ a {
     display: none;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1255px) {
   .content-first {
     display: flex;
   }
@@ -816,8 +816,8 @@ a {
 }
 
 .conteiner-info__photo-left__line {
-  top: -25px;
-  left: 0;
+  margin-top: -25px;
+  margin-left: 0;
   position: absolute;
   z-index: 2;
 }
@@ -882,9 +882,6 @@ a {
 
 @media (max-width: 375px) {
   .conteiner-info {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
     gap: 0;
   }
   .conteiner-info__photo-right__line, .conteiner-info__photo-left__line {
@@ -893,14 +890,35 @@ a {
   .conteiner-info .carousel__btn-element {
     display: none;
   }
+  .conteiner-info__photo-left__cup {
+    left: 0;
+    top: 7px;
+  }
+}
+@media screen and (max-width: 1255px) {
+  .conteiner-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    gap: 65px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 94px;
+  }
   .conteiner-info__img-left {
     order: 1;
   }
   .conteiner-info__about-us-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 30px;
     order: 2;
   }
   .conteiner-info__about-us-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 30px;
     order: 4;
   }
@@ -908,10 +926,6 @@ a {
     margin-top: 96px;
     margin-left: 0;
     order: 3;
-  }
-  .conteiner-info__photo-left__cup {
-    left: 0;
-    top: 7px;
   }
 }
 .footer__element-left__map {
