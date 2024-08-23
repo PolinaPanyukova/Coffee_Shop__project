@@ -1,3 +1,6 @@
+* {
+  outline: 1px solid red;
+}
 .carousel {
   display: flex;
   background: url(../img/carousel/backgraund.png);
@@ -11,16 +14,20 @@
 .carousel__gallery {
   display: flex;
   gap: 30px;
+  overflow: hidden;
+  max-width: 1100px;
+  width: calc(100% - 10px);
 
 }
 .carousel__gallery-element {
   box-sizing: border-box;
-  display: inline-block;
-  max-width: 340px;
-  background: #FFFFFF;
-  padding: 0 57px 0 59px;
-  box-shadow: 0px 23px 34px 0px #2339372B;
-  border-radius: 25px;
+    display: inline-block;
+    max-width: 340px;
+    background: #FFFFFF;
+    padding: 0 57px 0 59px;
+    box-shadow: 0px 23px 34px 0px #2339372B;
+    border-radius: 25px;
+    height: 458px;
   
 }
 
